@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Global */
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  height: 26px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:not(card),
+.btn:not(back) {
+  width: 100%;
+}
+
+.btn.card {
+  width: 7em;
+}
+
+.btn.back {
+  width: 15em;
+}
+
+.dark-btn,
+.dark-btn a {
+  background-color: var(--dark-color);
+  color: white;
+}
+
+.light-btn,
+.light-btn a {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+/* Container */
+
+.container {
+  margin: auto;
+  padding: 1em;
+}
+
+/* About & NotFound */
+
+.about > * {
+  margin: 1em;
+  text-align: center;
+}

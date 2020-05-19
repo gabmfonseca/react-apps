@@ -1,0 +1,84 @@
+/* User info */
+
+.user {
+  display: flex;
+  margin: 0.5em 0;
+  border: #ccc 1px dotted;
+}
+
+.user .user-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 1em 0;
+  border-right: #ccc 1px dotted;
+}
+
+.user .user-col-1 p:nth-child(2) {
+  margin: 0.6em 0;
+}
+
+.user img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.user .user-col-2 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  padding: 0.7em 1em;
+}
+
+.user .user-col-2 > * {
+  margin: 0.3em 0;
+}
+
+@media (max-width: 500px) {
+  .user {
+    display: flex;
+    flex-direction: column;
+  }
+  .user .user-col-1 {
+    border-bottom: #ccc 1px dotted;
+    border-right: none;
+  }
+}
+
+/* User stats */
+
+.user-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 0.5em 0;
+  border: #ccc 1px dotted;
+}
+
+.user-stats p {
+  background-color: var(--dark-color);
+  color: white;
+  margin: 1em;
+  padding: 0.5em 1em;
+  font-size: 14px;
+  width: 150px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .user-stats {
+    flex-wrap: wrap;
+  }
+}
+
+/* User repos */
+
+ul li {
+  border: #ccc 1px dotted;
+  padding: 4px 8px;
+  margin: 8px 0;
+  list-style: none;
+}
